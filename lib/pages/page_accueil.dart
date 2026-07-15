@@ -75,7 +75,7 @@ class _PageAccueilState extends State<PageAccueil> {
                         return ListTile(
                           leading: CircleAvatar(
                             backgroundImage:
-                                NetworkImage("https://i.pravatar.cc/150?img=${data[index]['id']}"),
+                                NetworkImage("https://api.dicebear.com/9.x/personas/png?seed=${data[index]["name"]}",),
                                 radius: 60,
                           ),
                           title: Text(item['name'].toString()),
